@@ -1,11 +1,11 @@
-const formulario = document.querySelector("#formRegistro");
-const mensaje = document.querySelector("#mensaje");
+const formulario = document.querySelector("form");
+const mensaje = document.createElement("p");
+mensaje.id = "mensaje";
+formulario.after(mensaje);
 
-formulario.addEventListener("submit", function (evento) {
-    evento.preventDefault(); 
-    
+formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
     const nombre = document.querySelector("#nombre").value;
     mensaje.textContent = `Registro realizado para ${nombre}`;
-    
-    formulario.reset(); 
+    formulario.reset();
 });
