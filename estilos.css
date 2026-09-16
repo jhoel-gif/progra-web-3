@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background:whitesmoke;
+}
+
+h1 {
+    color:cornflowerblue
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 420px;
+}
+
+input, button {
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+}
